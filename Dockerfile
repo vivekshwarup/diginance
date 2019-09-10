@@ -15,7 +15,7 @@ RUN apt-get update -y && \
 RUN apt-get install git zip bzip2 net-tools vim \
 			wget rsync curl cron \
 			nmap \
-                        texlive-latex-extra \
+                        texlive-latex-extra --no-install-recommends \
 			gcc cmake gcc-mingw-w64 clang clang-format perl-base \
 			pkg-config libssh-gcrypt-dev libgnutls28-dev libglib2.0-dev uuid-dev libldap2-dev \
 			libpcap-dev libgpgme-dev bison flex libksba-dev libsnmp-dev libgcrypt20-dev \
